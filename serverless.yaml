@@ -1,0 +1,21 @@
+service: serverlesscicd
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+# you can overwrite defaults here
+  stage: prod
+  region: eu-west-1
+  
+
+functions:
+  lambda:
+    handler: index.handler
+    events:
+      - http:
+          path: /submit
+          method: POST
+
