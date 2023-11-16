@@ -23,7 +23,7 @@ exports.handler = async (event) => {
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Form submitted successfully and this is serverless ci3d3' }),
+      body: JSON.stringify({ message: 'Form submitted successfully and this is serverless cicdv5' }),
     };
   } catch (error) {
     console.error(error);
